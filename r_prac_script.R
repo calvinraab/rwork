@@ -1,6 +1,5 @@
 r <- c(2,3,4,5,6,7)
 
-
 library(usethis)
 library(devtools)
 
@@ -9,7 +8,18 @@ install_git("https://github.com/JeffSackmann/tennis_atp.git")
 x <- getURL("https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_1968.csv") 
 mydata <- read.csv(text = x)
 
-mydata
+mydata$winner_id
+
+#Finding the most common winner, it's #100074 
+# Going to see if this difference shows up in Github 
+sort(table(mydata$winner_id),decreasing=TRUE)[1:5]
+
+#Finding the person 
+which(mydata$winner_id == 100074)
+which(mydata$winner_id == 100074)
+
+#Arthur Ashe won the most 
+mydata[229,]
 
 head(mydata)
 
@@ -70,5 +80,7 @@ ydatshort
 
 hand_short <- ydatshort$winner_hand
 hand_short
+
+unique(hand_short)
 
 
