@@ -48,17 +48,27 @@ colSums(is.na(test))[[1]]
 
 is.data.frame()
 
+library(RCurl)
 y <- getURL("https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2020.csv")
 ydat <- read.csv(text = y)
 
-
+ydat
 
 
 ydat
 colnames(ydat)
 ydatshort <- head(ydat)
 
+handed <- ydat$winner_hand
+
+handed
+
 test
 
 
 ydatshort
+
+hand_short <- ydatshort$winner_hand
+hand_short
+
+
