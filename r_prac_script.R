@@ -84,3 +84,5 @@ hand_short
 unique(hand_short)
 
 bob <- c(1,2,3)
+
+joe <- c(3,4,5,6)
