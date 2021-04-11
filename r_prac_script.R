@@ -83,4 +83,4 @@ hand_short
 
 unique(hand_short)
 
-
+bob <- c(1,2,3)
