@@ -1,0 +1,16 @@
+---
+title: "rmd_prac"
+author: "Calvin Raab"
+date: "4/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+TestA
+```{r}
+test <- c(3,4,5)
+```
+
