@@ -86,3 +86,16 @@ unique(hand_short)
 bob <- c(1,2,3)
 
 joe <- c(3,4,5,6)
+
+
+data(gdp)
+data(GDP)
+data("GDP.csv")
+
+library(readr)
+GDP <- read_csv("GDP.csv")
+View(GDP)
+
+
+head(GDP)
+
