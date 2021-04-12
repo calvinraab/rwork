@@ -88,10 +88,6 @@ bob <- c(1,2,3)
 joe <- c(3,4,5,6)
 
 
-data(gdp)
-data(GDP)
-data("GDP.csv")
-
 library(readr)
 GDP <- read_csv("GDP.csv")
 View(GDP)
@@ -99,3 +95,11 @@ View(GDP)
 
 head(GDP)
 
+?sample()
+
+x <- sample(100, 200, replace = T)
+x
+
+
+x2 <- matrix(data = x, nrow = 10)
+x2
