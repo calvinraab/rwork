@@ -21,10 +21,17 @@ TestB
 second <- c(4,5,6,8)
 ```
 
+<<<<<<< HEAD
 Test Calvin 
 ```{r}
 here <- c(6,7,8,9,10)
 
 ```
 
+=======
+TestL
+```{r}
+larryv <- c("larry", "is", "in", "the", "building")
+```
+>>>>>>> d727e2ebb81f3833dc261132f68c38360e298c81
 
